@@ -1,0 +1,439 @@
+@import "var";
+#Skills {
+    .skills__main {
+        display: flex;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 80px;
+        color: $secondery-color;
+        padding-top: 66px;
+        padding-bottom: 55px;
+    }
+    .skills {
+        display: grid;
+        grid-gap: 18px;
+        grid-template-columns: repeat(auto-fill, minmax(1fr, 434px, 435px));
+        grid-template-rows: 600px auto;
+        grid-auto-rows: minmax(300px, auto);
+        justify-items: center;
+        & div {
+            position: relative;
+            border-radius: 10px;
+            background-color: $gray;
+            padding: 0 45px 0 43px;
+            & botton {
+                position: absolute;
+                padding: 17px 35px 16px 34px;
+                background: $color-bg;
+                border-radius: 5px;
+                &:hover {
+                    background: $color-text;
+                }
+                & a {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 27px;
+                    /* identical to box height */
+                    color: $accent;
+                    display: flex;
+                    &:hover {
+                        color: $secondery-color;
+                    }
+                }
+            }
+        }
+        & div:nth-child(1) {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-template-rows: 600px auto;
+            grid-auto-rows: minmax(300px, auto);
+        }
+        & div:nth-child(4) {
+            position: relative;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-template-rows: 600px auto;
+            grid-auto-rows: minmax(300px, auto);
+        }
+    }
+}
+
+.slills__1 {
+    & img {
+        padding-top: 33px;
+        padding-left: 20px;
+        margin: 0;
+    }
+    & h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 80px;
+        /* identical to box height, or 267% */
+        color: $color-bg;
+    }
+    & p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-text;
+        padding-top: 20px;
+    }
+    & bottom {
+        padding-bottom: 96px;
+    }
+}
+
+.slills__2 {
+    & h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 80px;
+        /* identical to box height, or 267% */
+        color: $color-bg;
+        margin: 0;
+    }
+    & p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-text;
+        padding-top: 20px;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+}
+
+.slills__3 {
+    & img {
+        padding-bottom: 40px;
+    }
+    & h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 80px;
+        /* identical to box height, or 267% */
+        color: $color-bg;
+        margin: 0;
+    }
+    & p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-text;
+        padding-top: 20px;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+}
+
+.slills__4 {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    & h3 {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .skills__main {
+        display: flex;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 80px;
+        color: $secondery-color;
+        padding-top: 47px;
+        padding-bottom: 53px;
+    }
+    .skills {
+        & div botton {
+            position: absolute;
+            padding: 17px 35px 16px 34px;
+            background: $color-bg;
+            border-radius: 5px;
+            &:hover {
+                background: $color-text;
+            }
+            & a {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 27px;
+                /* identical to box height */
+                color: $accent;
+                display: flex;
+                &:hover {
+                    color: $secondery-color;
+                }
+            }
+        }
+    }
+}
+
+.slills__1 {
+    & img {
+        max-width: 260px;
+    }
+    & h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 80px;
+        /* identical to box height, or 267% */
+        color: $color-bg;
+    }
+    & p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: $color-text;
+        padding-top: 20px;
+    }
+    & bottom {
+        padding-bottom: 52px;
+    }
+}
+
+.slills__2 {
+    & img {
+        max-width: 260px;
+    }
+    & h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 80px;
+        /* identical to box height, or 267% */
+        color: $color-bg;
+    }
+    & p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: $color-text;
+        padding-top: 20px;
+    }
+}
+
+.slills__3 {
+    & img {
+        max-width: 260px;
+        padding-bottom: 20px;
+    }
+    & h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 80px;
+        /* identical to box height, or 267% */
+        color: $color-bg;
+        margin: 0;
+    }
+    & p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $color-text;
+        padding-top: 20px;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+}
+
+.slills__4 div {
+    & img {
+        max-width: 260px;
+    }
+    & h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 80px;
+        /* identical to box height, or 267% */
+        color: $color-bg;
+        padding: 0;
+        margin: 0;
+    }
+    & p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: $color-text;
+        padding-top: 5px;
+        margin: 0;
+    }
+    & bottom {
+        padding-top: 52px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .skills__main {
+        display: flex;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 80px;
+        color: $secondery-color;
+        padding-top: 47px;
+        padding-bottom: 53px;
+    }
+    .skills {
+        & div botton {
+            position: absolute;
+            padding: 13px 35px 12px 34px;
+            background: $color-bg;
+            border-radius: 5px;
+            &:hover {
+                background: $color-text;
+            }
+            & a {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                /* identical to box height */
+                color: $accent;
+                display: flex;
+                &:hover {
+                    color: $secondery-color;
+                }
+            }
+        }
+    }
+}
+
+.slills__1 {
+    & img {
+        max-width: 214px;
+    }
+    & h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 80px;
+        /* identical to box height, or 267% */
+        color: $color-bg;
+    }
+    & p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 21px;
+        color: $color-text;
+        padding-top: 20px;
+    }
+    & bottom {
+        padding-bottom: 52px;
+    }
+}
+
+.slills__2 {
+    & img {
+        max-width: 200px;
+    }
+    & h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 80px;
+        /* identical to box height, or 267% */
+        color: $color-bg;
+    }
+    & p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 21px;
+        color: $color-text;
+        padding-top: 20px;
+    }
+}
+
+.slills__3 {
+    & img {
+        max-width: 216px;
+        padding-bottom: 20px;
+    }
+    & h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 80px;
+        /* identical to box height, or 267% */
+        color: $color-bg;
+        margin: 0;
+    }
+    & p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 24px;
+        color: $color-text;
+        padding-top: 20px;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+}
+
+.slills__4 div {
+    & img {
+        max-width: 202px;
+        max-height: 134px;
+    }
+    & h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 80px;
+        /* identical to box height, or 267% */
+        color: $color-bg;
+        padding: 0;
+        margin: 0;
+    }
+    & p {
+        display: none;
+    }
+    & bottom {
+        padding: 5px 40px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .skills {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .skills {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}

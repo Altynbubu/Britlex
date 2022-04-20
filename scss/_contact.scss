@@ -1,0 +1,107 @@
+@import "var";
+#Contacts {
+    padding-top: 100px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    /* identical to box height, or 167% */
+    color: #000000;
+}
+
+.contact_subtitle {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8f95a5;
+}
+
+.contact__btn {
+    padding: 20px 90px 20px 91px;
+    position: absolute;
+    background: #263238;
+    border-radius: 10px;
+    margin-left: 12px;
+    color: #ffff;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.contact__email {
+    border: 1px solid #8f95a5;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 26px 125px 26px 125px;
+}
+
+.contact__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8f95a5;
+    padding-bottom: 50px;
+}
+
+.content__items {
+    padding-left: 110px;
+}
+
+ul {
+    display: flex;
+}
+
+@media screen and (max-width: 575px) {
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content__page img {
+        max-width: 358px;
+    }
+    .content__items ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+    @media screen and (max-width: 320px) {
+        .contact {
+            display: flex;
+            -webkit-box-pack: justify;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-content: center;
+            align-items: center;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            align-content: stretch;
+            flex-wrap: wrap;
+            padding-top: 50px;
+        }
+    }
+}

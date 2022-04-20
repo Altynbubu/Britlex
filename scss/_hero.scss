@@ -1,0 +1,284 @@
+@import "var";
+#hero {
+    padding-top: 54px;
+    .hero {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        &__main {
+            &-box {
+                display: flex;
+                &-title {
+                    max-width: 386px;
+                    font-family: $secondery-font;
+                    font-weight: 600;
+                    font-size: 64px;
+                    line-height: 80px;
+                    color: $secondery-color;
+                    padding-top: 6px;
+                }
+                & span {
+                    width: 100%;
+                    max-width: 85px;
+                    height: auto;
+                    padding-top: 141px;
+                    padding-left: 40px;
+                }
+            }
+            &-subtitle {
+                max-width: 550px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 36px;
+                color: $color-text;
+                padding-bottom: 36px;
+                margin-top: 0;
+            }
+            &-btn {
+                position: absolute;
+                padding: 32px 117px 32px 118px;
+                background: $color-bg;
+                border-radius: 15px;
+                transition: background-color 0.2s;
+                &:hover {
+                    background-color: $color-text;
+                }
+                &-link {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 36px;
+                    line-height: 54px;
+                    color: $accent;
+                    text-align: center;
+                    transition: color 0.2s;
+                    &:hover {
+                        color: $secondery-color;
+                    }
+                }
+            }
+        }
+        &__page {
+            width: 100%;
+            max-width: 661px;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #hero {
+        .hero {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            &__main {
+                &-box {
+                    display: flex;
+                    &-title {
+                        font-weight: 600;
+                        font-size: 48px;
+                        line-height: 64px;
+                        padding-top: 3px;
+                    }
+                    & span {
+                        width: 100%;
+                        max-width: 58px;
+                        height: auto;
+                        padding-top: 50px;
+                        padding-left: 10px;
+                    }
+                }
+                &-subtitle {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 30px;
+                    padding-bottom: 18px;
+                    margin: 0;
+                }
+                &-btn {
+                    position: absolute;
+                    padding: 22px 78px 22px 79px;
+                    background: $color-bg;
+                    border-radius: 5px;
+                    &-link {
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 36px;
+                    }
+                }
+            }
+            &__page {
+                width: 100%;
+                max-width: 460px;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #hero {
+        .hero {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            &__main {
+                &-box {
+                    display: flex;
+                    &-title {
+                        font-weight: 600;
+                        font-size: 36px;
+                        line-height: 45px;
+                        padding-top: 1px;
+                    }
+                    & span {
+                        width: 100%;
+                        max-width: 20px;
+                        height: auto;
+                        padding: 0;
+                    }
+                }
+                &-subtitle {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding-bottom: 9px;
+                    margin: 0;
+                }
+                &-btn {
+                    position: absolute;
+                    padding: 19px 67px;
+                    background: $color-bg;
+                    border-radius: 5px;
+                    &-link {
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 27px;
+                    }
+                }
+            }
+            &__page {
+                width: 100%;
+                max-width: 352px;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #hero {
+        .hero {
+            position: relative;
+            display: flex;
+            flex-direction: column-reverse;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-items: center;
+            &__main {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+                &-box {
+                    &-title {
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 45px;
+                        display: flex;
+                        align-items: center;
+                    }
+                    & span {
+                        display: none;
+                    }
+                }
+                &-subtitle {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: center;
+                    padding-bottom: 100px;
+                }
+                &-btn {
+                    position: absolute;
+                    padding: 24px 102px;
+                    background: $color-bg;
+                    border-radius: 5px;
+                    &-link {
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 27px;
+                    }
+                }
+            }
+        }
+        &__page {
+            width: 100%;
+            max-width: 424px;
+            height: auto;
+            margin-left: 0;
+            margin-right: 0;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #hero {
+        .hero {
+            position: relative;
+            display: flex;
+            flex-direction: column-reverse;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-items: center;
+            &__main {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+                &-box {
+                    display: flex;
+                    align-items: center;
+                    &-title {
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 45px;
+                    }
+                    & span {
+                        display: none;
+                    }
+                }
+                &-subtitle {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: center;
+                    padding-bottom: 100px;
+                }
+                &-btn {
+                    position: absolute;
+                    padding: 24px 102px;
+                    background: $color-bg;
+                    border-radius: 5px;
+                    &-link {
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 27px;
+                    }
+                }
+            }
+        }
+        &__page {
+            width: 100%;
+            max-width: 424px;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+}

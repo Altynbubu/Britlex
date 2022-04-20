@@ -1,0 +1,52 @@
+@import "var";
+.footer {
+    background: #c4c4c4;
+    border: 1px solid #c4c4c4;
+    height: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.footer__logo {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    color: #000000;
+    padding: 40px 0 58px;
+}
+
+.footer__logo span {
+    color: #c4c4c4;
+}
+
+.footer__link {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+    color: #8f95a5;
+    padding: 55px 0 58px;
+}
+
+@media screen and (max-width: 575px) {
+    #Hero {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #Hero {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 100px;
+    }
+}
